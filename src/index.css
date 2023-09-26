@@ -1,13 +1,242 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:"Poppins",sans-serif;
+  background-color:whitesmoke;
+}
+:root {
+  --bgcolor:#f1f5fd;
+  --primary-color:#6f5de7;
+  --text-color:#828286;
+  --main-text-color:#333333;
+
+}
+html{
+  font-size: 62.5%;
+}
+Navlink{
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #333333;
+}
+/* .navbar-collapse{
+  display: flex;
+  justify-content: center;
+} */
+
+.navbar-backgrond{
+  background-color:var(--bgcolor);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+
+}
+.logo_img{
+  margin-top: 0px;
+  width:5rem;
+  height: auto;
+}
+.navbar li{
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  font-size:1.5rem;
+  font-weight: lighter;
+  position: relative;
+
+}
+.navbar li :hover{
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.2rem 0.3rem #786dbd;
+}
+.btn-btn-style {
+  width: 8rem;
+  height: 4rem;
+  border: 0;
+  margin: 0 0.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color) ;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+.btn-btn-style:hover {
+  border: 0.1rem solid var(--primary-color) !important;
+  color: var(--primary-color);
+  background-color: transparent;
+  box-shadow: 0 0.2rem 0.5rem rgb(183,171,255,0.5);
+}
+.cart-trolly--link{
+  position: relative;
+}
+.cart-trolly{
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  color: #000;
+  position: relative;
+}
+.cart-total--item{
+  width: 2rem;
+  height:2rem;
+  background-color: var(--primary-color);
+  color: #000;
+  border-radius: 50%;
+  position: absolute;
+  display: grid;
+  place-items:center;
+  top: -30%;
+  left: 80%;
+
+}
+#carousel-caption{
+  color: #000;
+  font-size: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* footer css started */
+.main-footer-box{
+  background-color:rgb(42, 42, 94);
+  color: white;
+  /* margin-top: 6rem; */
+}
+.upper-footer-box{
+      padding: 4rem;
+}
+.social-icons{
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.social-icons div{
+  margin-top: 1rem;
+  padding:0.5rem;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 45%;
+}
+.errorPage{
+  margin-top: 6rem;
+}
+
+/* feature section cssss */
+.feature-section{
+  background-color: var(--bgcolor);
+  margin-top: 5rem;
+  padding: 3rem;
+}
+.intro-data{
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: lighter;
+  color: var(--main-text-color) !important;
+}
+.products-card-box a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.card-product{
+  text-decoration: none;
+  width:90%;
+}
+.figure-caption{
+  text-align: center;
+  padding-right: 1rem;
+  z-index: 99;
+  background-color:var(--main-text-color) !important;
+  color: var(--bgcolor) !important;
+}
+/* navigation page css */
+
+.navigation-page{
+  background-color: var(--bgcolor) !important;
+  font-size: 2rem;
+}
+.navigation-page a{
+  text-decoration: none;
+}
+.product_warranty{
+  text-align: center;
+}
+.main_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_box{
+  display: grid;justify-content: end;
+
+}
+.single_box{
+  margin-top:5rem;
+}
+.main_box img{
+  height: 7rem;
+  width: 9rem;
+}
+.styButton{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-left:1rem;
+}
+.active{
+  opacity: 1;
+}
+.toggle{
+  margin-top: 2rem;
+}
+.minusBtn{
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+}
+.plusBtn{
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+.Add-cart-button button{
+  border: none;
+  outline: none;
+  font-size:1.5rem;
+  margin-top: 1rem;
+}
+
+
+/*sort section css  */
+.sort{
+  margin: 2rem;
+}
+.sort-section{
+  background-color: #786dbd;
+    font-size: large;
+}
+
+/* product page css */
+.product-img{
+      height: 15rem;
+}
+
+/* //fiter section css */
+.term-condition-para{
+  font-size: larger;
+  font-family:'Courier New', Courier, monospace;
 }

@@ -1,0 +1,128 @@
+.herosection {
+    padding: 5rem 0 0 0;
+}
+
+.image-section img {
+
+    border-radius: 5rem;
+    border: 2px solid black;
+    transition: transform .2s;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+
+}
+
+.service-box {
+    padding: 9rem 0 0 0;
+}
+
+.data-section {
+    font-family: "Poppins", sans-serif;
+    color: var(--main-text-color) !important;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.data-section h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    font-weight: 500;
+}
+
+#section1,
+#section2,
+#section3 {
+    width: auto;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5rem;
+
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+
+#section1,
+#section3 {
+    background-color: var(--bgcolor) !important;
+}
+
+#section2 {
+    gap: 3.5rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#section2 div {
+    background-color: var(--bgcolor) !important;
+    padding: 2.8rem;
+    border-radius: 2.5rem;
+}
+
+.trusted-section {
+    height: auto;
+    margin-top: 5rem;
+    padding: 5rem 3rem;
+    background-color: var(--bgcolor) !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+}
+
+.trusted-section h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-text-color) !important;
+}
+
+.brand-container {
+    margin-top: 5rem;
+    /* display: flex;
+        align-self: center; */
+    /* flex-direction: row; */
+    /* gap: 1rem; */
+    /* background-color: red; */
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brands img {
+    min-width: 5rem;
+    height: 8rem;
+}
+
+/* @media (max-width:640px){s */
+
+/* contact page styling */
+.heading {
+    margin: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-text-color) !important;
+}
+.contact-form{
+    max-width: 50rem;
+    margin: auto;
+}
+.formcontrol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

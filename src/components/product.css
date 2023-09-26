@@ -1,0 +1,39 @@
+.filterBar{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.filter-search{
+    margin-top: 2rem;
+    margin-bottom:0.6rem;
+    width:100%;
+}
+.filter-search input{
+    width: 70%;
+    margin-block-end: auto;
+}
+.filter-category{
+    margin-bottom: 0.8rem;
+}
+.filter-category-item ul{
+    width: 70%;
+}
+.filter-category-item ul li button{
+    border: none;
+    background-color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    background-color: rgb(246, 248, 250);
+    width: 100%;
+    font-size: medium;
+}
+.filter-company{
+    width: 70%;
+}
+
+/* sort css */
+
+.NumProducts{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
